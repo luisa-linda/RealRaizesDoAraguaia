@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botão Voltar -->
+        <ImageView
+            android:id="@+id/btnVoltar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/seta"
+            android:contentDescription="Voltar"
+            android:tint="#C2185B"
+            android:layout_gravity="start" />
+
+        <!-- Título (Tamanho aumentado) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Serra do Roncador"
+            android:textColor="#C2185B"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Espaço entre título e imagem -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Imagem do parque -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/serradoroncador" />
+
+        <Button
+            android:id="@+id/Localizacaoserra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serra do Roncador" />
+
+        <!-- Descrição (Texto aumentado) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  A Serra do Roncador fica em Mato Grosso e é famosa por suas paisagens misteriosas, trilhas, cachoeiras e formações rochosas. O local atrai turistas e aventureiros por seu visual único e pelas lendas que cercam a região."
+
+            android:textSize="20sp"
+            android:textColor="#555555"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="15dp" />
+
+    </LinearLayout>
+</ScrollView>

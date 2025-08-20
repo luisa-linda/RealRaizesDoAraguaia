@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botão Voltar -->
+        <ImageView
+            android:id="@+id/btnVoltar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/seta"
+            android:contentDescription="Voltar"
+            android:tint="#C2185B"
+            android:layout_gravity="start" />
+
+
+
+        <!-- Título (Tamanho aumentado) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Parque das Águas Quentes"
+            android:textColor="#C2185B"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Espaço entre título e imagem -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Imagem do parque -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aguasquentes1" />
+
+        <!-- Localização (Texto aumentado) -->
+        <Button
+            android:id="@+id/LocalizacaoAguas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Águas Quentes" />
+
+        <!-- Descrição (Texto aumentado) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  O Parque das Águas Quentes é um dos principais atrativos turísticos de Barra do Garças. Possui piscinas de águas termais com propriedades terapêuticas, em meio à natureza do cerrado mato-grossense."
+            android:textSize="20sp"
+            android:textColor="#555555"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="6dp" />
+
+    </LinearLayout>
+</ScrollView>

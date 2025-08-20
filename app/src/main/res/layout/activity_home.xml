@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Outros componentes da tela, como ScrollView, etc. -->
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Ícone de início"
+            android:src="@drawable/baseline_home_24"
+            android:tint="#C2185B" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="116dp"
+            android:src="@drawable/logo_raizes" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontos Turísticos"
+            android:textSize="22sp"
+            android:textColor="#C2185B"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Botão 1 -->
+        <Button
+            android:id="@+id/btnBarraAguas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barra do Garças - Parque das Águas Quentes"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rosa"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Botão 2 -->
+        <Button
+            android:id="@+id/btnBarraSerra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barra do Garças - Serra do Roncador"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rosa"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Botão 3 -->
+        <Button
+            android:id="@+id/btnPontalArara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Praia da Arara"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rosa"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Botão 4 -->
+        <Button
+            android:id="@+id/btnPontalLago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pontal do Araguaia - Lago"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rosa"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Botão 5 -->
+        <Button
+            android:id="@+id/btnAragarcasPraia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aragarças - Praia Quarto Crescente"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rosa"
+            android:layout_marginBottom="12dp"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
