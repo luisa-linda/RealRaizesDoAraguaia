@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.raizesdoaraguaia">
@@ -9,11 +8,12 @@
         android:label="Raízes do Araguaia"
         android:roundIcon="@mipmap/aguasquentes"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="ExtraText">
 
-        <!-- Tela inicial (ícone do app) -->
+        <!-- Tela inicial -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +23,13 @@
 
         <!-- Telas do app -->
         <activity android:name=".HomeActivity" android:exported="true" />
-        <activity android:name=".BarraAguasActivity" android:exported="false" />
-        <activity android:name=".BarraSerraActivity" android:exported="false" />
-        <activity android:name=".PontalPraiaAraraActivity" android:exported="false" />
-        <activity android:name=".PontalLago" android:exported="false" />
-        <activity android:name=".PraiaQuartoCrescenteActivity" android:exported="false" />
-
+        <activity android:name=".BarraAguasActivity" android:exported="true" />
+        <activity android:name=".BarraSerraActivity" android:exported="true" />
+        <activity android:name=".PontalPraiaAraraActivity" android:exported="true" />
+        <activity android:name=".PontalLago" android:exported="true" />
+        <activity android:name=".PraiaQuartoCrescenteActivity" android:exported="true" />
+        <activity android:name=".AguasQuentesInfoActivity" android:exported="true" />
 
     </application>
+
 </manifest>

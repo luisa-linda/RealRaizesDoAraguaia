@@ -12,12 +12,6 @@ class PraiaQuartoCrescenteActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_praiaquartocrescente)
 
-        val btnVoltar = findViewById<ImageView>(R.id.btnVoltar)
-        btnVoltar.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-            finish() // fecha a tela atual para não empilhar
-        }
         val btnLocation = findViewById<Button>(R.id.LocalizacaoPraiaQuartoCrescente)
 
         btnLocation.setOnClickListener {

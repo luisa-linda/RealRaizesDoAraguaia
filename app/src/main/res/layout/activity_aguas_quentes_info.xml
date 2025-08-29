@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parque das Águas Quentes"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Horário e Contato -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que horas abre?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aberto de terça a domingo, das 8h às 20h.  Telefone: (66) 3405-1533"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Preço -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qual o preço?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresso: R$ 10,00 por pessoa (meia R$ 5,00). Crianças até 6 anos e idosos não pagam."
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- História -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qual a história do parque?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O Parque das Águas Quentes de Barra do Garças foi inaugurado em 1984 e administrado pela prefeitura, sendo um dos principais cartões-postais da cidade por suas águas termais, que brotam naturalmente a temperaturas entre 31°C e 43°C, conhecidas por suas propriedades terapêuticas. O parque oferece diversas opções de lazer em meio à natureza, com piscinas, toboáguas, restaurante e outras estruturas, e tem passado por várias modernizações e revitalizações, com foco em acessibilidade e conforto para os visitantes."
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Avaliação -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O que os visitantes acham?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muito bem avaliado pelos turistas como um lugar tranquilo, seguro, ideal para famílias e bom custo-benefício. Nota média: 4,6/5 estrelas"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Curiosidades -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Curiosidades"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C2185B"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- O parque tem piscinas naturais termais com temperaturas entre 31°C e 43°C.\n- As águas possuem propriedades terapêuticas e relaxantes.\n- Localizado dentro de uma reserva ambiental do cerrado mato-grossense.\n- Conta com trilhas ecológicas e áreas para piquenique."
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botões de ação -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Botão Voltar -->
+
+            <!-- Botão Localização -->
+            <Button
+                android:id="@+id/LocalizacaoAguas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Localização"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#C2185B"
+                android:layout_marginLeft="16dp"/>
+
+            <!-- Botão Saiba Mais -->
+            <Button
+                android:id="@+id/btnSaibaMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saiba Mais"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#C2185B"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

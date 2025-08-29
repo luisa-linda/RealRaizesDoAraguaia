@@ -8,59 +8,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
-        <!-- Botão Voltar -->
-        <ImageView
-            android:id="@+id/btnVoltar"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/seta"
-            android:contentDescription="Voltar"
-            android:tint="#C2185B"
-            android:layout_gravity="start" />
-
-        <!-- Título (Tamanho aumentado) -->
+        <!-- Título -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
             android:text="Praia da Arara"
             android:textColor="#C2185B"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:gravity="center" />
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
 
-        <!-- Espaço entre título e imagem -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="16dp" />
-
-        <!-- Imagem do parque -->
+        <!-- Imagem -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/praiadaarara" />
+            android:src="@drawable/praiadaarara"
+            android:contentDescription="Imagem da Praia da Arara" />
 
+        <!-- Botão Localização -->
         <Button
             android:id="@+id/LocalizacaoPraiadaArara"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Praia da Arara" />
+            android:text="📍 Localização"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C2185B"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Abrir localização no Google Maps" />
 
-
-        <!-- Descrição (Texto aumentado) -->
+        <!-- Descrição -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Praia da Arara é um refúgio encantador às margens do Rio Araguaia, em Pontal do Araguaia, Mato Grosso. Suas areias finas e águas calmas formam um cenário perfeito para relaxar, nadar e curtir o pôr do sol. Com natureza preservada e clima tranquilo, é um destino ideal para famílias e amantes da vida ao ar livre."
-
+            android:text="Praia da Arara é um refúgio encantador às margens do Rio Araguaia, em Pontal do Araguaia, Mato Grosso. Suas areias finas e águas calmas formam um cenário perfeito para relaxar, nadar e curtir o pôr do sol. Com natureza preservada e clima tranquilo, é um destino ideal para famílias e amantes da vida ao ar livre."
             android:textSize="20sp"
             android:textColor="#555555"
-            android:layout_marginTop="15dp"
-            android:lineSpacingExtra="15dp" />
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="32dp" />
 
     </LinearLayout>
 </ScrollView>

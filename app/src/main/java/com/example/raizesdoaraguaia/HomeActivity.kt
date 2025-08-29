@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -20,7 +19,6 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
 
-        val intent = Intent(this, BarraSerraActivity::class.java)
         val btnBarraSerra = findViewById<Button>(R.id.btnBarraSerra)
         btnBarraSerra.setOnClickListener {
             val intent = Intent(this, BarraSerraActivity::class.java)
@@ -35,27 +33,19 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
 
-
-        val btnPontalLago= findViewById<TextView>(R.id.btnPontalLago)
+        val btnPontalLago = findViewById<TextView>(R.id.btnPontalLago)
         btnPontalLago.setOnClickListener {
             val intent = Intent(this, PontalLago::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()
         }
-        val btnAragarcasPraia = findViewById<Button>(R.id.btnAragarcasPraia)
 
+        val btnAragarcasPraia = findViewById<Button>(R.id.btnAragarcasPraia)
         btnAragarcasPraia.setOnClickListener {
             val intent = Intent(this, PraiaQuartoCrescenteActivity::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-
-        }
-        val imgHome = findViewById<ImageView>(R.id.imgHome)
-
-        imgHome.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java) // troca para a tela que você quer
-            startActivity(intent)
         }
     }
 }

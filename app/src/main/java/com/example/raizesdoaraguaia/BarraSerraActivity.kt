@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class BarraSerraActivity : AppCompatActivity() {
@@ -12,30 +11,26 @@ class BarraSerraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_barra_serra)
 
-        val btnVoltar = findViewById<ImageView>(R.id.btnVoltar)
-        btnVoltar.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-            finish() // fecha a tela atual para não empilhar
-        }
         val btnLocation = findViewById<Button>(R.id.Localizacaoserra)
 
         btnLocation.setOnClickListener {
-            val origem = "-15.908459191433277,-52.31534555415329"
-            val destino = "-15.890000,-52.270000"
+            val destino = "-15.66667,-55.00000" // Coordenadas da Serra do Roncador
 
-            val uri = Uri.parse("https://www.google.com/maps/dir/$origem/$destino")
-            val intent = Intent(Intent.ACTION_VIEW, uri)
-            intent.setPackage("com.google.android.apps.maps")
+            // Link para abrir rota do local atual até o destino
+            val uri = Uri.parse("https://www.google.com/maps/dir/?api=1&destination=$destino")
 
-            // Verifica se há app que suporta esse intent
+            val intent = Intent(Intent.ACTION_VIEW, uri).apply {
+                setPackage("com.google.android.apps.maps")
+            }
+
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
             } else {
-                // Se não tiver, abre via navegador
+                // Abre no navegador caso não tenha app Google Maps
                 val fallbackIntent = Intent(Intent.ACTION_VIEW, uri)
                 startActivity(fallbackIntent)
             }
+
         }
     }
 }

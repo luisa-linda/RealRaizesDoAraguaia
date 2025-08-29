@@ -10,17 +10,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Botão Voltar -->
-        <ImageView
-            android:id="@+id/btnVoltar"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/seta"
-            android:contentDescription="Voltar"
-            android:tint="#C2185B"
-            android:layout_gravity="start" />
-
-        <!-- Título (Tamanho aumentado) -->
+        <!-- Título -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,22 +34,35 @@
             android:scaleType="centerCrop"
             android:src="@drawable/serradoroncador" />
 
+        <!-- Botão Localização alinhado à esquerda -->
         <Button
             android:id="@+id/Localizacaoserra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Serra do Roncador" />
+            android:text="📍 Localização"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C2185B"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:contentDescription="Abrir localização no Google Maps"/>
 
-        <!-- Descrição (Texto aumentado) -->
+        <!-- Descrição -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  A Serra do Roncador fica em Mato Grosso e é famosa por suas paisagens misteriosas, trilhas, cachoeiras e formações rochosas. O local atrai turistas e aventureiros por seu visual único e pelas lendas que cercam a região."
-
+            android:text="A Serra do Roncador fica em Mato Grosso e é famosa por suas paisagens misteriosas, trilhas, cachoeiras e formações rochosas. O local atrai turistas e aventureiros por seu visual único e pelas lendas que cercam a região."
             android:textSize="20sp"
             android:textColor="#555555"
             android:layout_marginTop="15dp"
             android:lineSpacingExtra="15dp" />
+
+
 
     </LinearLayout>
 </ScrollView>

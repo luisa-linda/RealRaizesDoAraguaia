@@ -10,56 +10,54 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Botão Voltar -->
-        <ImageView
-            android:id="@+id/btnVoltar"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/seta"
-            android:contentDescription="Voltar"
-            android:tint="#C2185B"
-            android:layout_gravity="start" />
-
         <!-- Título -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
             android:text="Lago do Pontal"
             android:textColor="#C2185B"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:gravity="center" />
-
-        <!-- Espaço entre título e imagem -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="16dp" />
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
 
         <!-- Imagem do lago -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/lagopontal" />
+            android:src="@drawable/lagopontal"
+            android:contentDescription="Imagem do Lago do Pontal" />
 
-        <!-- Botão de localização -->
+        <!-- Botão de Localização alinhado à esquerda -->
         <Button
             android:id="@+id/Localizacaolago"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lago do Pontal" />
+            android:text="📍 Localização"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C2185B"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:contentDescription="Abrir localização no Google Maps" />
 
         <!-- Descrição -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:lineSpacingExtra="15dp"
             android:text="O Lago do Pontal, em Pontal do Araguaia (MT), é um espaço encantador que une lazer, natureza e cultura. Com paisagens tranquilas, é palco de eventos de pesca, encontros comunitários e momentos especiais em família."
             android:textColor="#555555"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="32dp" />
 
     </LinearLayout>
 </ScrollView>
